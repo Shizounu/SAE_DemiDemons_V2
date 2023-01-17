@@ -102,7 +102,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sliders_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 880
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0738cf835ebfa2f42a516d357410fa0e
+      internalID: 1702365200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 793
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69098f39699281479561ce04defe388
+      internalID: -1682173120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 708
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d45e05dd0d67eb4c90ea7927506892a
+      internalID: 171603549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 627
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6e5d2f6330e9e4bb6d444301bc1535
+      internalID: -2042842163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 547
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3c78f937de92d4eb0ebd757a1d08ac
+      internalID: 1484623530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 465
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d511b6368dd42394f9e3ae51a73fbc18
+      internalID: 35322288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 382
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abeb04753d1071241b208400d4e892af
+      internalID: -2112338143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_7
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 298
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd066b8c9664c344aae8df590a6ae1a8
+      internalID: 1884643672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 215
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d990b345e15ca438c7f8ae7d7a7ece
+      internalID: 1146374730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sliders_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 130
+        width: 557
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb3b6e57899daf4aa05d617f7992f01
+      internalID: 1699124567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -113,7 +323,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sliders_5: 35322288
+      sliders_2: 171603549
+      sliders_4: 1484623530
+      sliders_9: 1699124567
+      sliders_6: -2112338143
+      sliders_1: -1682173120
+      sliders_3: -2042842163
+      sliders_7: 1884643672
+      sliders_8: 1146374730
+      sliders_0: 1702365200
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
