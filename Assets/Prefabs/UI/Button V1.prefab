@@ -66,7 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem Ipsum
+  m_text: 'Lorem Ipsum
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b545b2138f72a1243a69d79545bbf9be, type: 2}
   m_sharedMaterial: {fileID: -231153826414157924, guid: b545b2138f72a1243a69d79545bbf9be, type: 2}
@@ -243,7 +245,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: a658408e7ab8d294aa68425eb7bcde68, type: 3}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 928933c3197aeff48a6c216bc9263f9a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 21300000, guid: 7c6dfc0c78e3a0141b1c5ba7fd014ab1, type: 3}
   m_AnimationTriggers:

@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     private List<AsyncOperation> runningLoadingOperations;
     public void loadScene(int index){
         AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
-        op.allowSceneActivation = false;
+        op.allowSceneActivation = true;
         runningLoadingOperations.Add(op);
     }
     public void unloadScene(int index){
