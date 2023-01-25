@@ -310,7 +310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224.3214, y: 2.5205383}
+  m_AnchoredPosition: {x: -313.23074, y: 2.5205383}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &636085491
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 76.15701, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -630,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224.3214, y: 0}
+  m_AnchoredPosition: {x: -303.8719, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796727770
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 81.852974, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 774388322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3c379cae12dc346987e64ebd6ab8eb, type: 3}
+  m_Script: {fileID: 11500000, guid: ff87d1780aefd8241807819bb3deb250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &966257583
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 993813899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3c379cae12dc346987e64ebd6ab8eb, type: 3}
+  m_Script: {fileID: 11500000, guid: ff87d1780aefd8241807819bb3deb250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &993813899 stripped
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1108843549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7bff09a09515b4eb75dba68eeaba26, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef8b99357bec564e832ce03ff727663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 914071064}
@@ -1870,7 +1870,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3c379cae12dc346987e64ebd6ab8eb, type: 3}
+  m_Script: {fileID: 11500000, guid: ff87d1780aefd8241807819bb3deb250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1503679009
@@ -1884,6 +1884,7 @@ GameObject:
   - component: {fileID: 1503679012}
   - component: {fileID: 1503679011}
   - component: {fileID: 1503679010}
+  - component: {fileID: 1503679013}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1957,6 +1958,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503679013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503679009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 2
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1560743663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,7 +2329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224.3214, y: 2.5205383}
+  m_AnchoredPosition: {x: -315.57047, y: 2.5205383}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1900433907
@@ -2383,7 +2417,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 83.59561, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

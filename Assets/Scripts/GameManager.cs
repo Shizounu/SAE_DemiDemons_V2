@@ -24,6 +24,13 @@ public class GameManager : MonoBehaviour
 
     #region  Input
     public InputActions inputActions;
+
+    private void OnEnable() {
+        
+    }
+    private void OnDisable() {
+        
+    }
     #endregion
 
     #region Loading

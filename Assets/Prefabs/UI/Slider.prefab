@@ -184,25 +184,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 7757180589339099152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3c379cae12dc346987e64ebd6ab8eb, type: 3}
+  m_Script: {fileID: 11500000, guid: ff87d1780aefd8241807819bb3deb250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
+  PropertyName: Main Volume
+  audioRange: {x: -40, y: 0}
   Index: 0
   OnValueChange:
     m_PersistentCalls:
       m_Calls: []
   Visual: {fileID: 7757180590101465388}
   visuals:
-  - {fileID: -1760203835, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: -1252873505, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: 39813621, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: 53350688, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: 1509238396, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: -249154143, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: 1757633191, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: -714214041, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: -986858576, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
-  - {fileID: 506402747, guid: bda2c9139235f4f419f628ede8b7ebde, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7757180589489596765
 GameObject:
   m_ObjectHideFlags: 0
