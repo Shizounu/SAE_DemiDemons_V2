@@ -25,6 +25,7 @@ public class RythmGameManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameManager inputManager;
     [SerializeField] private GameObject notePrefab;
+    [SerializeField] private AudioSource sfxSource;
 
     [Space(), Header("Rythmlanes")]
     public RythmLane Lane1;
@@ -34,9 +35,10 @@ public class RythmGameManager : MonoBehaviour
 
     [Header("Debug Info")]
     public int progress;
-
+    public UnityEngine.Events.UnityAction OnLaneComplete;
     [System.Serializable] public class RythmLane{
         public RythmGameManager manager;
+        public int laneNotesCompleted;
 
         [SerializeField] private float curEnergy;        
         [SerializeField] private Transform noteSpawnPoint;
@@ -51,6 +53,8 @@ public class RythmGameManager : MonoBehaviour
         public bool isActivated, isLockedOut;
         [SerializeField] private UnityEngine.UI.Image renderer;
         [SerializeField] private Sprite DefaultState,ActivatedState,LockedOutState;
+
+
 
         public void addBeat(BeatInstruction b){
             if (b == BeatInstruction.None)
@@ -75,6 +79,7 @@ public class RythmGameManager : MonoBehaviour
                     miss?.Invoke();
                 break;
             }
+            laneNotesCompleted++;
             Destroy(beat.transform.gameObject);
             beats.Remove(beat);
         }
@@ -175,21 +180,25 @@ public class RythmGameManager : MonoBehaviour
         #region Laneinput setup
         inputManager.inputActions.RythmGame.ActivateLane1.performed += _ => {
             Lane1.isActivated = true;
+            sfxSource.Play();
         };
         inputManager.inputActions.RythmGame.ActivateLane1.canceled += _ => Lane1.isActivated = false;
 
         inputManager.inputActions.RythmGame.ActivateLane2.performed += _ => {
             Lane2.isActivated = true;
+            sfxSource.Play();
         };
         inputManager.inputActions.RythmGame.ActivateLane2.canceled += _ => Lane2.isActivated = false;
 
         inputManager.inputActions.RythmGame.ActivateLane3.performed += _ => {
             Lane3.isActivated = true;
+            sfxSource.Play();
         };
         inputManager.inputActions.RythmGame.ActivateLane3.canceled += _ => Lane3.isActivated = false;
 
         inputManager.inputActions.RythmGame.ActivateLane4.performed += _ => {
             Lane4.isActivated = true;
+            sfxSource.Play();
         };
         inputManager.inputActions.RythmGame.ActivateLane4.canceled += _ => Lane4.isActivated = false;
         #endregion
@@ -202,6 +211,17 @@ public class RythmGameManager : MonoBehaviour
         Lane2.Tick();
         Lane3.Tick();
         Lane4.Tick();
+
+        if(notesLeft() == 0)
+            OnLaneComplete?.Invoke();
+    }
+    private int notesLeft(){
+        int lane1count = map.Count - Lane1.laneNotesCompleted; 
+        int lane2count = map.Count - Lane2.laneNotesCompleted; 
+        int lane3count = map.Count - Lane3.laneNotesCompleted; 
+        int lane4count = map.Count - Lane4.laneNotesCompleted; 
+
+        return lane1count + lane2count + lane3count + lane4count;
     }
 
     private IEnumerator spawnNotes(){

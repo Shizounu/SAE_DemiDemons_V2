@@ -291,10 +291,10 @@ MonoBehaviour:
   rythmManager: {fileID: 1286453770}
   NoFill: {fileID: 21300000, guid: 5fe658df5627e4e4daab94d09e38536a, type: 3}
   QuaterFill: {fileID: 21300000, guid: c299649bde8d6f34684fc19fb83cf6bf, type: 3}
-  HalfFill: {fileID: 0}
-  ThreeQuarterFill: {fileID: 0}
-  FullFill: {fileID: 0}
-  imgRenderer: {fileID: 0}
+  HalfFill: {fileID: 21300000, guid: ad78228ab16af244c9a95508d9b82a8a, type: 3}
+  ThreeQuarterFill: {fileID: 21300000, guid: eef5a679339ab094b87372cbe477bd6d, type: 3}
+  FullFill: {fileID: 21300000, guid: 73e43acd3e102b34c8c1dc495ec8af09, type: 3}
+  imgRenderer: {fileID: 380953940}
 --- !u!1 &492761975
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +909,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1286453769}
   - component: {fileID: 1286453770}
+  - component: {fileID: 1286453771}
+  - component: {fileID: 1286453772}
   m_Layer: 5
   m_Name: Minigame
   m_TagString: Untagged
@@ -1028,8 +1030,10 @@ MonoBehaviour:
     Lane4Instruction: 1
   inputManager: {fileID: 0}
   notePrefab: {fileID: 8551784151546657608, guid: 8b9a4771888613f4d8a56338f9ab3be7, type: 3}
+  sfxSource: {fileID: 1286453772}
   Lane1:
     manager: {fileID: 0}
+    laneNotesCompleted: 0
     curEnergy: 1
     noteSpawnPoint: {fileID: 1544333898}
     noteHitPoint: {fileID: 1097936344}
@@ -1042,6 +1046,7 @@ MonoBehaviour:
     LockedOutState: {fileID: 21300000, guid: 65a71ff27c71f604cab00fc1008f77fc, type: 3}
   Lane2:
     manager: {fileID: 0}
+    laneNotesCompleted: 0
     curEnergy: 0
     noteSpawnPoint: {fileID: 1472603440}
     noteHitPoint: {fileID: 1097936344}
@@ -1054,6 +1059,7 @@ MonoBehaviour:
     LockedOutState: {fileID: 21300000, guid: 65a71ff27c71f604cab00fc1008f77fc, type: 3}
   Lane3:
     manager: {fileID: 0}
+    laneNotesCompleted: 0
     curEnergy: 0
     noteSpawnPoint: {fileID: 2143776130}
     noteHitPoint: {fileID: 1986895207}
@@ -1066,6 +1072,7 @@ MonoBehaviour:
     LockedOutState: {fileID: 21300000, guid: 65a71ff27c71f604cab00fc1008f77fc, type: 3}
   Lane4:
     manager: {fileID: 0}
+    laneNotesCompleted: 0
     curEnergy: 0
     noteSpawnPoint: {fileID: 492761976}
     noteHitPoint: {fileID: 1854731752}
@@ -1078,6 +1085,115 @@ MonoBehaviour:
     LockedOutState: {fileID: 21300000, guid: 65a71ff27c71f604cab00fc1008f77fc, type: 3}
   progress: 0
   fileName: TestMap1
+--- !u!114 &1286453771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286453768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352a7ee8e50bfda46a9f3b29e8d187c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+--- !u!82 &1286453772
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286453768}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -8009281679073350406, guid: 026b024c1973eaf4bba05a900bc9e599, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d3266170a7c6e7c4d9d835dd65af9f17, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1306138463
 GameObject:
   m_ObjectHideFlags: 0
