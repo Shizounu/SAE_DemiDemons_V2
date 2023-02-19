@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 7cfb9e6ea6ba8204c85902ba5d015f32
+  - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: aea4d02ac0e98e248b9b94a22d6016af
+  - enabled: 1
+    path: Assets/Scenes/RythmGame.unity
+    guid: 59fd413a9b904bc4492f0d944146549e
+  - enabled: 1
+    path: Assets/Scenes/Managers.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 37f74852bf33215428f0817da1854a06
   m_configObjects: {}

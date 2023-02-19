@@ -4,6 +4,7 @@ using UnityEngine;
 
 using UnityEngine.SceneManagement;
 
+[DefaultExecutionOrder(-50)]
 public class GameManager : MonoBehaviour
 {
     #region Singleton
@@ -16,14 +17,22 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         
-        inputActions = new();
+        _inputActions = new();
         runningLoadingOperations = new();
         
     }
     #endregion
 
     #region  Input
-    public InputActions inputActions;
+    private InputActions _inputActions;
+    public InputActions inputActions{
+        get {
+            if(_inputActions == null){
+                _inputActions = new();
+            }
+            return _inputActions;
+        }
+    }
 
     private void OnEnable() {
         
@@ -36,6 +45,7 @@ public class GameManager : MonoBehaviour
     #region Loading
     private List<AsyncOperation> runningLoadingOperations;
     public void loadScene(int index){
+        //SceneManager.LoadScene(5 ,LoadSceneMode.Additive);
         AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
         op.allowSceneActivation = true;
         runningLoadingOperations.Add(op);

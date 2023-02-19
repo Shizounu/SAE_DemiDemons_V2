@@ -35,7 +35,7 @@ public class RythmGameManager : MonoBehaviour
 
     [Header("Debug Info")]
     public int progress;
-    public UnityEngine.Events.UnityAction OnLaneComplete;
+    public UnityEngine.Events.UnityEvent OnLaneComplete;
     [System.Serializable] public class RythmLane{
         public RythmGameManager manager;
         public int laneNotesCompleted;
@@ -212,7 +212,7 @@ public class RythmGameManager : MonoBehaviour
         Lane3.Tick();
         Lane4.Tick();
 
-        if(notesLeft() == 0)
+        if(progress == map.Count)
             OnLaneComplete?.Invoke();
     }
     private int notesLeft(){

@@ -79,7 +79,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4a7fa2d4-1c2b-465a-a170-30b8a6571937"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mouse and Keyboard"",
@@ -101,7 +101,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e47b0d8f-84de-4ba3-8cd8-47206397506a"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mouse and Keyboard"",
@@ -123,7 +123,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cad60542-4960-459c-8d1c-9201e7c43765"",
-                    ""path"": ""<Keyboard>/downArrow"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mouse and Keyboard"",
@@ -150,6 +150,126 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Mouse and Keyboard"",
                     ""action"": ""Activate Lane 4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PlayerControls"",
+            ""id"": ""47edcea6-126c-4ecb-a3a4-2596b9baad87"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""c65da32b-ad91-4c60-be51-cb9bb90b8f16"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""9a9f8bc5-f5f8-414c-951c-6466168e29c9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Mouse and Keyboard"",
+                    ""id"": ""d7e7a76f-6dd0-4cf3-97ab-63558571805a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f4d73b0e-47c7-45f2-9320-630a9803fedc"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e6571150-b9f8-4d3b-8c6f-e417b4d31ede"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ea30f6cc-fe7e-4e3c-a50d-2b21679efdef"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""db9fd7b7-125c-4052-a591-f08f8c6e2531"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e50e1358-9a25-4191-8bb3-3a3dba562283"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""TextBoxControls"",
+            ""id"": ""864ebbb0-c69f-4b29-a082-c81b817da3d1"",
+            ""actions"": [
+                {
+                    ""name"": ""Confirm"",
+                    ""type"": ""Button"",
+                    ""id"": ""4ac2430f-ea60-4a8b-8c8a-98d469cb6476"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""5d698975-802a-40eb-9ad7-dab3ced09893"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Confirm"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -181,6 +301,13 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_RythmGame_ActivateLane2 = m_RythmGame.FindAction("Activate Lane 2", throwIfNotFound: true);
         m_RythmGame_ActivateLane3 = m_RythmGame.FindAction("Activate Lane 3", throwIfNotFound: true);
         m_RythmGame_ActivateLane4 = m_RythmGame.FindAction("Activate Lane 4", throwIfNotFound: true);
+        // PlayerControls
+        m_PlayerControls = asset.FindActionMap("PlayerControls", throwIfNotFound: true);
+        m_PlayerControls_Movement = m_PlayerControls.FindAction("Movement", throwIfNotFound: true);
+        m_PlayerControls_Interact = m_PlayerControls.FindAction("Interact", throwIfNotFound: true);
+        // TextBoxControls
+        m_TextBoxControls = asset.FindActionMap("TextBoxControls", throwIfNotFound: true);
+        m_TextBoxControls_Confirm = m_TextBoxControls.FindAction("Confirm", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -293,6 +420,80 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         }
     }
     public RythmGameActions @RythmGame => new RythmGameActions(this);
+
+    // PlayerControls
+    private readonly InputActionMap m_PlayerControls;
+    private IPlayerControlsActions m_PlayerControlsActionsCallbackInterface;
+    private readonly InputAction m_PlayerControls_Movement;
+    private readonly InputAction m_PlayerControls_Interact;
+    public struct PlayerControlsActions
+    {
+        private @InputActions m_Wrapper;
+        public PlayerControlsActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_PlayerControls_Movement;
+        public InputAction @Interact => m_Wrapper.m_PlayerControls_Interact;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerControlsActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerControlsActions instance)
+        {
+            if (m_Wrapper.m_PlayerControlsActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnMovement;
+                @Interact.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
+            }
+            m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
+            }
+        }
+    }
+    public PlayerControlsActions @PlayerControls => new PlayerControlsActions(this);
+
+    // TextBoxControls
+    private readonly InputActionMap m_TextBoxControls;
+    private ITextBoxControlsActions m_TextBoxControlsActionsCallbackInterface;
+    private readonly InputAction m_TextBoxControls_Confirm;
+    public struct TextBoxControlsActions
+    {
+        private @InputActions m_Wrapper;
+        public TextBoxControlsActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Confirm => m_Wrapper.m_TextBoxControls_Confirm;
+        public InputActionMap Get() { return m_Wrapper.m_TextBoxControls; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(TextBoxControlsActions set) { return set.Get(); }
+        public void SetCallbacks(ITextBoxControlsActions instance)
+        {
+            if (m_Wrapper.m_TextBoxControlsActionsCallbackInterface != null)
+            {
+                @Confirm.started -= m_Wrapper.m_TextBoxControlsActionsCallbackInterface.OnConfirm;
+                @Confirm.performed -= m_Wrapper.m_TextBoxControlsActionsCallbackInterface.OnConfirm;
+                @Confirm.canceled -= m_Wrapper.m_TextBoxControlsActionsCallbackInterface.OnConfirm;
+            }
+            m_Wrapper.m_TextBoxControlsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Confirm.started += instance.OnConfirm;
+                @Confirm.performed += instance.OnConfirm;
+                @Confirm.canceled += instance.OnConfirm;
+            }
+        }
+    }
+    public TextBoxControlsActions @TextBoxControls => new TextBoxControlsActions(this);
     private int m_MouseandKeyboardSchemeIndex = -1;
     public InputControlScheme MouseandKeyboardScheme
     {
@@ -308,5 +509,14 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         void OnActivateLane2(InputAction.CallbackContext context);
         void OnActivateLane3(InputAction.CallbackContext context);
         void OnActivateLane4(InputAction.CallbackContext context);
+    }
+    public interface IPlayerControlsActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
+    }
+    public interface ITextBoxControlsActions
+    {
+        void OnConfirm(InputAction.CallbackContext context);
     }
 }
