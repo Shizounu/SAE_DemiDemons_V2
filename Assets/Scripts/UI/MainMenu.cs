@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
         GameManager.Instance.loadScene(index);
     }
     public void UnloadMainMenu(){
-        GameManager.Instance.unloadScene(0);
+        GameManager.Instance.unloadScene(1);
     }
     public void QuitGame(){
         Application.Quit();

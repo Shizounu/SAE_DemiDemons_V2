@@ -10,7 +10,7 @@ public class Interact_LoadGame : MonoBehaviour, IInteractibles
     }
     public void Interact()
     {
-        GameManager.Instance.unloadScene(2);
-        GameManager.Instance.loadScene(3);
+        GameManager.Instance.unloadScene(3);
+        GameManager.Instance.loadScene(4);
     }
 }

@@ -20,6 +20,14 @@ public class GameManager : MonoBehaviour
         _inputActions = new();
         runningLoadingOperations = new();
         
+        loadScene(1);
+    }
+
+    private void Start() {
+    }
+
+    private void Update() {
+        //finishLoadOperation();
     }
     #endregion
 
@@ -46,18 +54,16 @@ public class GameManager : MonoBehaviour
     private List<AsyncOperation> runningLoadingOperations;
     public void loadScene(int index){
         //SceneManager.LoadScene(5 ,LoadSceneMode.Additive);
+        
         AsyncOperation op = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
         op.allowSceneActivation = true;
         runningLoadingOperations.Add(op);
+        
+        //SceneManager.LoadScene(index, LoadSceneMode.Additive);
     }
     public void unloadScene(int index){
         runningLoadingOperations.Add(SceneManager.UnloadSceneAsync(index, UnloadSceneOptions.None));
-    }
-
-    public void finishLoadOperation(){
-        foreach (var loadingOperation in runningLoadingOperations){
-            loadingOperation.allowSceneActivation = true;
-        }
+        //SceneManager.UnloadSceneAsync(index, UnloadSceneOptions.None);
     }
 
     public float percentageCompleted(){

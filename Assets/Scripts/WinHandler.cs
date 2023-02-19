@@ -15,7 +15,7 @@ public class WinHandler : MonoBehaviour
         if(isLoading)
             return;
         isLoading = true;
-        gameManager.loadScene(2);
-        gameManager.unloadScene(3);
+        gameManager.loadScene(3);
+        gameManager.unloadScene(4);
     }
 }

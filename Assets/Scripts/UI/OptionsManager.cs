@@ -10,8 +10,8 @@ public class OptionsManager : MonoBehaviour
 
 
     public void Back(){
-        GameManager.Instance.loadScene(0);
-        GameManager.Instance.unloadScene(1);
+        GameManager.Instance.loadScene(1);
+        GameManager.Instance.unloadScene(2);
     }
     public void ShowSettings(){
         settings.SetActive(true);
